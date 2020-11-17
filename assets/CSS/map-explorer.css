@@ -128,13 +128,15 @@ nav{
 
 #map-intro{
     font-size: 1.5rem;
+    margin: 50px;
 }
 
 #toggle-button{
     margin-top: 5%;
     width: 200px;
     font-size: 1.2rem;
-    border: 2px solid black;
+    border: 1px solid grey;
+    border-radius: 12px;
     display: flex;
     /* justify-content: space-between; */
 }
@@ -143,6 +145,7 @@ nav{
     /* border: 1px solid red; */
     padding: 3%;
     width: 50%;
+    border-radius: 12px;
     text-align: center;
     cursor: pointer;
 }
@@ -169,13 +172,16 @@ nav{
 }
 
 .map-display svg path{
-    fill: #1f4068;
+    fill: #666699;
     stroke: white;
     stroke-width: 0.5px;
 }
 .map-display svg path:hover{
-    fill: #e43f5a;
+    fill: #43d8c9;
+   	stroke: #6633CC;
+
 }
+
 
 .no-display{
     display: none;
