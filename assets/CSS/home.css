@@ -131,6 +131,7 @@ nav{
     padding: 0 70px;
     height: 400px;
     color:#0f0d14;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 #corona-overview img{
@@ -152,6 +153,23 @@ nav{
     color:#bc78ff;
 }
 
+#corona-intro h3::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 5px;
+    background: rgb(67,216,201);
+    background: linear-gradient(90deg, rgba(67,216,201,1) 30%, rgba(188,120,255,1) 70%);
+    transition: width .5s;
+}
+
+#corona-intro h3:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
+
+
 #corona-intro div{
     font-size: 1.2rem;
     padding-left: 5%;
@@ -167,12 +185,29 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 #symptoms h1{
-    color:#43d8c9;
-    margin: 5%;
-    font-size: 3rem;
+    margin: 3%;
+    font-size: 2.4rem;
+    color: #43d8c9;
+}
+
+#symptoms h1::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 5px;
+    background: rgb(188,120,255);
+    background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
+    transition: width .5s;
+}
+
+#symptoms h1:hover::after{
+    width:100%;
+    transition: width .5s;
 }
 
 #symptoms-container{
@@ -204,7 +239,6 @@ ul{
 }
 
 ul li{
-    font-size: 2rem;
     margin-top: 3%;
     margin-left: 4%;
 }
@@ -245,14 +279,29 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 100px;
 }
 
 #transmission h1{
     margin: 0 5% 5%;
-    font-size: 3rem;
-    color:#bc78ff;
+    font-size: 2.4rem;
 }
+
+#transmission h1::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 5px;
+    background: rgb(67,216,201);
+    background: linear-gradient(90deg, rgba(67,216,201,1) 30%, rgba(188,120,255,1) 70%);
+    transition: width .5s;
+}
+
+#transmission h1:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
 
 #modes{
     width: 100%;
@@ -262,11 +311,11 @@ ul li{
 
 .transmission-card{
     width: 25%;
-    padding:2%;
+    padding:4%;
     display: flex;
     flex-direction: column;
     margin: 0 10%;
-    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .transmission-card img{
@@ -274,7 +323,7 @@ ul li{
 }
 
 .transmission-card div{
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     margin-top:10%;
     text-align: center;
 }
@@ -289,13 +338,31 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 }
 
 #precautions h1{
     margin: 5%;
-    font-size: 3rem;
+    font-size: 2.4rem;
     color:#43d8c9;
 }
+
+
+#precautions h1::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 5px;
+    background: rgb(188,120,255);
+    background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
+    transition: width .5s;
+}
+
+#precautions h1:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
 
 #precautions-container{
     width: 100%;
@@ -382,16 +449,18 @@ ul li{
 
 #explorer-content a{
     margin-bottom:7%;
-    
 }
 
 #explorer-content a button{
     width: 150px;
     height: 50px;
     font-size: 1.5rem;
+    border:none;
     cursor: pointer;
     color: white;
-    background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 140%); 
+    background: rgb(188,120,255);
+    background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
+    transition: width .5s;
 }
 
 
