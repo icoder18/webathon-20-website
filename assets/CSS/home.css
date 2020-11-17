@@ -1,3 +1,5 @@
+
+
 *{
     box-sizing: border-box;
 }
@@ -5,6 +7,8 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'IBM Plex Serif', serif;
+    color: #0f0d14;
 }
 /* ---------------------nav-bar----------------------- */
 
@@ -37,10 +41,18 @@ nav{
     margin-right: 5px;
 }
 
-#project-id span{
-    font-size: 2.5rem;
+#project-name-1{
+    color:#BC78FF;
+    font-size: 3.0rem;
     font-weight: 600;
 }
+
+#project-name-2{
+    color:#43d8c9;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
 
 /* -----------nav menu------------- */
 
@@ -54,19 +66,35 @@ nav{
 
 #nav-menu a{
     text-decoration: none;
-    font-size: 1.3rem;
-    color: black;
+    font-size: 1.0rem;
     font-weight: 300;
-    /* padding: 1.5% 2.5%; */
+    color:#0f0d14;
+    /* padding: 1.5% 2.5%; */    
+}
 
-    
+#nav-menu a::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 2px;
+    background: #0f0d14;
+    transition: width .5s;
+}
+
+#nav-menu a:hover::after{
+    width:100%;
+    transition: width .5s;
 }
 
 .live{
-    color: white;
-    background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 140%); 
+    color:white;
+    background: #7579e7;
     border-radius: 8%;
-    padding: 5px 10px;
+    padding: 8px 10px;
+    /*background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 140%); 
+    border-radius: 8%;
+    padding: 5px 10px;*/
+
 }
 
 /* -------------------project intro------------------------- */
@@ -102,6 +130,7 @@ nav{
     align-items: center;
     padding: 0 70px;
     height: 400px;
+    color:#0f0d14;
 }
 
 #corona-overview img{
@@ -119,14 +148,14 @@ nav{
 }
 
 #corona-intro h3{
-    font-size: 3rem;
+    font-size: 2.4rem;
+    color:#bc78ff;
 }
 
 #corona-intro div{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 5%;
     text-align: justify;
-
 }
 
 
@@ -141,6 +170,7 @@ nav{
 }
 
 #symptoms h1{
+    color:#43d8c9;
     margin: 5%;
     font-size: 3rem;
 }
@@ -221,6 +251,7 @@ ul li{
 #transmission h1{
     margin: 0 5% 5%;
     font-size: 3rem;
+    color:#bc78ff;
 }
 
 #modes{
@@ -263,6 +294,7 @@ ul li{
 #precautions h1{
     margin: 5%;
     font-size: 3rem;
+    color:#43d8c9;
 }
 
 #precautions-container{
