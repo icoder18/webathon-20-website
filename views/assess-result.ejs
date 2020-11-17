@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CORshield
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/CSS/footer.css">
+        <link rel="stylesheet" href="/CSS/assess.css">
+    </head>
+    <body>
+        <body>
+            <nav>
+                <div id="project-id">
+                    <img src="/icons/logo.svg" alt="LOGO" id="logo">
+                    <span id="project-name-1">COR</span><span id="project-name-2">shield</span>
+                </div>
+                <div id="nav-menu">
+                    <a href="/"><span>Home</span></a>
+                    <a href="/map-explorer"><span>Map Explorer</span></a>
+                    <a href="/assess-yourself"><span class="live">Assess Yourself</span></a>
+                    <a href="#"><span>About</span></a>
+                </div>
+            </nav>
+    
+            <main>
+                <h1>
+                    SELF ASSESMENT TOOL
+                </h1>
+                <div id="tool-disclaimer">
+                    <span>
+                        This tool is not meant to take the place of consultation with your health care provider or to diagnose
+                        or treat conditions. 
+                    </span>
+                    <span>
+                        If you're in an emergency medical situation, call your local emergency number.
+                    </span>
+                    <span>
+                        Information about COVID-19 is constantly changing. And the level of COVID-19 activity varies by
+                        community, as does the availability of testing. For current updates on COVID-19 and details on
+                        testing and other health measures in your state, check with your local public health agency or visit
+                        <a href="https://www.mohfw.gov.in/"> https://www.mohfw.gov.in/ </a>
+                    </span>
+                </div>
+            </main>
+            <div id="results-heading">
+                RESULTS
+            </div>
+            <div id="result-display">
+                <% if(assesment == "serious"){ %>
+                    <div class="result-headline">
+                        Seek medical care immediately
+                    </div>
+                    <div class="result-subheading">
+                        Based on your answers, this may be a medical
+                        emergency. Seek emergency medical help
+                        immediately. Please wear a mask.
+                    </div>
+
+                <% } else if(assesment == "mild"){ %> 
+                    <div class="result-headline">
+                        Contact a health care provider within 12 hours
+                    </div>
+                    <div class="result-subheading">
+                        Your answers indicate that you have possible symptoms
+                        of COVID-19. Based on this information, you should
+                        speak to your health care provider. You may be directed
+                        to a testing site.
+                    </div>
+                    <div class="result-subheading-list">
+                        Call your local emergency number immediately if you develop symptoms like:
+                        <ul>
+                            <li>Ongoing pain or pressure in your chest</li>
+                            <li>New confusion</li>
+                            <li>A bluish color to your lips or face</li>
+                            <li>Struggling to breathe</li>
+                            <li>Feeling about to collapse every time you stand or
+                                sit up</li>
+                        </ul>
+                    </div>
+                    <div class="result-subheading-list">
+                        If your health care provider suspects or confirms that you have COVID-19:
+                        <ul>
+                            <li>Don't leave your home, except to get medical care,
+                                until cleared by your health care provider.</li>
+                                <li>
+                                    Stay in a specific room away from others in your home, and use a separate bathroom, if possible.
+                                </li>
+                                <li>Do not share household items.</li>
+                                <li>Wear a mask when around others if contact is
+                                    necessary.</li>
+                                <li>
+                                    Contact your health care provider for more advice if symptoms continue or get worse, or if new symptoms start.
+                                </li>
+                                <li>
+                                    Notify employee or occupational health at your work site before returning to work if you're a health care worker.
+                                </li>
+                        </ul>
+                    </div>
+                    
+                <%}else{ %> 
+                    <div class="result-headline">
+                        Manage symptoms at home
+                    </div>
+                    <div class="result-subheading">
+                        Your answers indicate that you do not have any
+                        symptoms or other factors that currently suggest the need
+                        for COVID-19 testing.
+                    </div>
+                    <div class="result-subheading">
+                        Contact your health care provider for advice if you get
+                        new symptoms or if you have close contact with someone
+                        with lab-confirmed COVID-19. Close contact means living
+                        with that person, being within 6 feet of that person for
+                        more than 5 minutes or being exposed to their sneezing
+                        or coughing while not both wearing masks. Close contact
+                        also means touching their mucus, saliva or shared items
+                        while not wearing gloves.
+                    </div>
+
+                    
+                <%} %>
+            
+            </div>
+
+            <a href="/assess-yourself" id="go-back-link"> Go Back to the Assesment Page -> </a>
+
+
+
+
+            <%- include("_footer") %>
+
+    </body>
+</html>
