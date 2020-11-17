@@ -5,3 +5,7 @@ module.exports.home = function(req,res){
 module.exports.map = function(req,res){
     return res.render("map-explorer");
 }
+
+module.exports.helpline = function(req,res){
+    return res.render("helpline");
+}
