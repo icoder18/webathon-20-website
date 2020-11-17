@@ -129,7 +129,7 @@ nav{
     height: auto;
     align-content: center;
     margin-left: 25%;
-
+    padding-bottom: 0px;
 }
 
 /*--------------------------helpline nos-------------------------*/
@@ -151,7 +151,7 @@ nav{
 }
 .state-table{
     margin-bottom: 10px;
-    padding:40px 20px 40px 20px;
+    padding:0px 20px 40px 20px;
 }
 
 .state-table th{
