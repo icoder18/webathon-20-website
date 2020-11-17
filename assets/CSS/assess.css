@@ -109,6 +109,9 @@ main{
 
 main h1{
     font-size: 2.5rem;
+    background: -webkit-linear-gradient(#43d8c9, #BC78FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #tool-disclaimer{
@@ -131,6 +134,8 @@ main h1{
     padding: 0 85px;
     margin:40px 0 20px 0;
     font-weight: 700;
+    color:#bc78ff;
+    text-decoration: underline;
 }
 
 form{
@@ -159,7 +164,9 @@ form{
 #basic-details div input{
     border: none;
     border-bottom:2px solid black ;
-    height: 20px;
+    height: 30px;
+    font-size: 1.2rem;
+    outline: none;
 }
 
 #contact-history{
@@ -220,6 +227,14 @@ form button{
     color:white;
     background: #7579e7;
     border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+form button:hover{
+    background: white;
+    color:#7579e7;
+    border: 1px solid #7579e7;
 }
 
 .no-display{
@@ -238,6 +253,7 @@ form button{
     text-align: center;
     font-weight: 700;
     text-decoration: underline;
+    color:#bc78ff;
 }
 
 .result-headline{
@@ -276,6 +292,11 @@ form button{
     font-size: 1.1rem;
     width: 100%;
     /* text-align: center; */
+    /* padding: 40px 40%;
+    margin-top: 50px; */
+}
+
+#link-container{
+    width: 100%;
     padding: 40px 40%;
-    margin-top: 50px ;
 }
