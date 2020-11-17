@@ -1,0 +1,281 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Serif', serif;
+    color: #0f0d14;
+}
+/* ---------------------nav-bar----------------------- */
+
+nav{
+    width: 100vw;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 85px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 50%, rgba(186,104,252,1) 80%); */
+    /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 40%, rgba(186,104,252,1) 80%); */
+    /* color: white; */
+}
+
+/* ---------LOGO AREA------------ */
+
+#project-id{
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#project-id img{
+    /* width: 26%; */
+    height: 65px;
+    margin-right: 5px;
+}
+
+#project-name-1{
+    color:#BC78FF;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+#project-name-2{
+    color:#43d8c9;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+
+/* -----------nav menu------------- */
+
+#nav-menu{
+ width: 40%;
+ /* border: 1px solid red; */
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+#nav-menu a{
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 300;
+    color:#0f0d14;
+    /* padding: 1.5% 2.5%; */    
+}
+
+#nav-menu a::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 2px;
+    background: #0f0d14;
+    transition: width .5s;
+}
+
+#nav-menu a:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
+.live{
+    color:white;
+    background: #7579e7;
+    border-radius: 8%;
+    padding: 8px 10px;
+    /*background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 140%); 
+    border-radius: 8%;
+    padding: 5px 10px;*/
+
+}
+
+/*---------------------- main----------- */
+
+main{
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    font-size: 2.5rem;
+}
+
+#tool-disclaimer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+#tool-disclaimer span{
+    margin-top: 15px;
+}
+
+/* -------------------------form--------------------------- */
+
+#form-heading{
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0 85px;
+    margin:40px 0 20px 0;
+    font-weight: 700;
+}
+
+form{
+    width: 100%;
+    padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+#basic-details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#basic-details h2{
+    width: 100%;
+
+}
+
+#basic-details div{
+    margin:20px 0;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+#basic-details div input{
+    border: none;
+    border-bottom:2px solid black ;
+    height: 20px;
+}
+
+#contact-history{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#contact-history span{
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+
+#symptoms{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#symptoms div{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+#symptoms span{
+    font-size: 1.2rem;
+    width: 35% ;
+    margin: 10px ;
+    /* margin-right: 80px; */
+}
+
+#chronic-illness{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#chronic-illness div{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+#chronic-illness span{
+    font-size: 1.2rem;
+    width: 35% ;
+    margin: 10px ;
+    /* margin-right: 80px; */
+}
+
+form button{
+    width: 15%;
+    height: 50px;
+    align-self: center;
+    margin: 40px;
+    font-size: 1.4rem;
+    color:white;
+    background: #7579e7;
+    border: none;
+}
+
+.no-display{
+    display: none;
+}
+
+
+
+/*----------------------------------------------------- assessment results-------------------------------------- */
+
+#results-heading{
+    font-size: 2rem;
+    width: 100%;
+    padding: 0 85px;
+    margin:40px auto 20px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.result-headline{
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 0 85px;
+    margin:20px auto 20px;
+    text-align: center;
+}
+
+.result-subheading{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 85px;
+    margin:20px auto 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .result-subheading ul{
+    text-align: left;
+} 
+
+.result-subheading-list{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0 100px;
+    margin:20px auto 20px;
+}
+
+
+#go-back-link{
+    color: black;
+    font-size: 1.1rem;
+    width: 100%;
+    /* text-align: center; */
+    padding: 40px 40%;
+    margin-top: 50px ;
+}

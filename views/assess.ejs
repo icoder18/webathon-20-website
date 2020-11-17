@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CORshield
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/CSS/footer.css">
+        <link rel="stylesheet" href="/CSS/assess.css">
+    </head>
+    <body>
+        <nav>
+            <div id="project-id">
+                <img src="/icons/logo.svg" alt="LOGO" id="logo">
+                <span id="project-name-1">COR</span><span id="project-name-2">shield</span>
+            </div>
+            <div id="nav-menu">
+                <a href="/"><span>Home</span></a>
+                <a href="/map-explorer"><span>Map Explorer</span></a>
+                <a href="/assess-yourself"><span class="live">Assess Yourself</span></a>
+                <a href="/helpline"><span>Helpline</span></a>
+            </div>
+        </nav>
+
+        <main>
+            <h1>
+                SELF ASSESMENT TOOL
+            </h1>
+            <div id="tool-disclaimer">
+                <span>
+                    This tool is not meant to take the place of consultation with your health care provider or to diagnose
+                    or treat conditions. 
+                </span>
+                <span>
+                    If you're in an emergency medical situation, call your local emergency number.
+                </span>
+                <span>
+                    Information about COVID-19 is constantly changing. And the level of COVID-19 activity varies by
+                    community, as does the availability of testing. For current updates on COVID-19 and details on
+                    testing and other health measures in your state, check with your local public health agency or visit
+                    <a href="https://www.mohfw.gov.in/"> https://www.mohfw.gov.in/ </a>
+                </span>
+            </div>
+        </main>
+
+        <div id="form-heading">Enter you details for asssesment</div>
+        <form action="/assess-yourself/result" method="POST">
+            <div id="basic-details">
+                <h2>
+                    Basic Details
+                </h2>
+                <div id="name-input">
+                    <label for="name">Name:</label>
+                    <input type="text"  id="name" name="name" required>
+                </div>
+                <div id="age-input">
+                    <label for="age">Age:</label>
+                    <input type="number"  id="age" name="age" required>
+                </div>
+                <div id="sex">
+                    <span>Sex:</span>
+                <span>
+                    <input type="radio" name="sex" value="male" id="male">
+                    <label for="male">Male</label>
+                </span>
+                <span>
+                    <input type="radio" name="sex" value="female" id="female">
+                    <label for="female">Female</label>
+                </span>
+                <span>
+                    <input type="radio" name="sex" value="other" id="other">
+                    <label for="other">Other</label>
+                </span>
+                </div>
+            </div>
+
+            <div id="contact-history">
+                <h2>
+                    Within the past 14 days, have you had any contact with someone who tested positive for COVID-19?
+                </h2>
+                <span>
+                    <input type="radio" name="contactHistory" value="yes" id="contact-yes">
+                    <label for="contact-yes">Yes</label>
+                </span>
+                <span>
+                    <input type="radio" name="contactHistory" value="no" id="contact-no">
+                    <label for="contact-no">No</label>
+                </span>
+            </div>
+
+            <div id="symptoms">
+                <h2>
+                    Which of these symptoms do you have? (Check all that APPLY)
+                </h2>
+                <div>
+                    <span>
+                        <input type="checkbox" name="symptoms" value="fever" id="fever">
+                        <label for="fever">Fever</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="symptoms" value="cough" id="cough">
+                        <label for="cough">Dry Cough</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="seriousSymptoms" value="breathlessness" id="breathlessness">
+                        <label for="breathlessness">Difficulty in Breathing</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="symptoms" value="muscle-ache" id="muscle-ache">
+                        <label for="muscle-ache">Muscle Aches</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="symptoms" value="sore-throat" id="sore-throat">
+                        <label for="sore-throat">Sore Throat</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="seriousSymptoms" value="senses-loss" id="senses-loss">
+                        <label for="senses-loss">Loss of smell or taste, or change in taste</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="symptoms" value="diarrhoea" id="diarrhoea">
+                        <label for="diarrhoea">Diarrhoea</label>
+                    </span>
+                    <span class="no-display">
+                        <input type="checkbox" name="symptoms" value="" id="symptoms-empty" checked>
+                        <label for="symptoms-empty"></label>
+                    </span>
+                    <span class="no-display">
+                        <input type="checkbox" name="seriousSymptoms" value="" id="seriousSymptoms-empty" checked>
+                        <label for="seriousSymptoms-empty"></label>
+                    </span>
+                    
+                </div>
+                
+            </div>
+
+            <div id="chronic-illness">
+                <h2>
+                    Do you have any chronic illness? (Check all that APPLY)
+                </h2>
+                <div>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="cancer" id="cancer">
+                        <label for="cancer">Cancer</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="kidney" id="kidney">
+                        <label for="kidney">Chronic Kidney Disease</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="heart" id="heart">
+                        <label for="heart">Heart Conditions</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="obesity" id="obesity">
+                        <label for="obesity">Obesity</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="diabetes" id="diabetes">
+                        <label for="diabetes">Type 2 Diabetes</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="bp" id="bp">
+                        <label for="bp">High Blood Pressure</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="asthama" id="asthama">
+                        <label for="asthama">Asthama</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="chronicIllness" value="pregnancy" id="pregnancy">
+                        <label for="pregnancy">Pregnancy</label>
+                    </span>
+                    <span class="no-display">
+                        <input type="checkbox" name="chronicIllness" value="" id="chronic-empty" checked>
+                        <label for="chronic-empty"></label>
+                    </span>
+                </div>
+                
+            </div>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+
+        <%- include("_footer");%>
+        
+    </body>
+</html>
