@@ -114,28 +114,50 @@ main h1{
     -webkit-text-fill-color: transparent;
 }
 
+main h1::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 5px;
+    background: rgb(188,120,255);
+    background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
+    transition: width .5s;
+}
+
+main h1:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
 #tool-disclaimer{
     display: flex;
     flex-direction: column;
     text-align: center;
     font-size: 1.3rem;
     align-items: center;
+    padding-bottom:20px;
+    border-bottom:  1px dashed grey;
 }
 
 #tool-disclaimer span{
     margin-top: 15px;
 }
 
+#tool-disclaimer a{
+    color:rgb(188,120,255);
+}
 /* -------------------------form--------------------------- */
 
 #form-heading{
-    font-size: 1.5rem;
+    padding-top: 20px;
+    font-size: 1.8rem;
     width: 100%;
     padding: 0 85px;
     margin:40px 0 20px 0;
     font-weight: 700;
     color:#bc78ff;
     text-decoration: underline;
+    text-align: center;
 }
 
 form{
