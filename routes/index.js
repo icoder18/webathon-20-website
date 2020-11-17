@@ -6,5 +6,6 @@ router.get("/",homeController.home);
 router.get("/map-explorer",homeController.map);
 router.get("/assess-yourself",homeController.assess);
 router.post("/assess-yourself/result",homeController.results);
+router.get("/helpline",homeController.helpline);
 
 module.exports = router;

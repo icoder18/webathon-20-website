@@ -1,0 +1,178 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Serif', serif;
+    color: #0f0d14;
+}
+/* ---------------------nav-bar----------------------- */
+
+nav{
+    width: 100vw;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 85px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 50%, rgba(186,104,252,1) 80%); */
+    /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 40%, rgba(186,104,252,1) 80%); */
+    /* color: white; */
+}
+
+/* ---------LOGO AREA------------ */
+
+#project-id{
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#project-id img{
+    /* width: 26%; */
+    height: 65px;
+    margin-right: 5px;
+}
+
+#project-name-1{
+    color:#BC78FF;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+#project-name-2{
+    color:#43d8c9;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+
+/* -----------nav menu------------- */
+
+#nav-menu{
+ width: 40%;
+ /* border: 1px solid red; */
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+#nav-menu a{
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 300;
+    color:#0f0d14;
+    /* padding: 1.5% 2.5%; */    
+}
+
+#nav-menu a::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 2px;
+    background: #0f0d14;
+    transition: width .5s;
+}
+
+#nav-menu a:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
+.live{
+    color:white;
+    background: #7579e7;
+    border-radius: 8%;
+    padding: 8px 10px;
+    /*background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 140%); 
+    border-radius: 8%;
+    padding: 5px 10px;*/
+
+}
+
+/* -------------------resources intro------------------------- */
+
+#helpline-intro{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    height: 50%;
+    font-weight: 600px;
+}
+#helpline-intro h3{
+    font-size: 1.8rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(93,183,210,0.85);
+    padding: 5px 10px;
+    color: white;
+    outline: 2px dashed black;
+}
+
+#helpline-intro img{
+    width: 50%;
+    height: auto;
+    align-content: center;
+    margin-left: 25%;
+    padding-bottom: 0px;
+}
+
+/*--------------------------helpline nos-------------------------*/
+.helpline-nos{
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.helpline-nos th{
+    text-align: left;
+    text-decoration: bold;
+}
+
+.helpline-nos th,td{
+    padding:5px 20px;
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+.state-table{
+    margin-bottom: 10px;
+    padding:0px 20px 40px 20px;
+}
+
+.state-table th{
+    color: rgba(93,183,210);
+}
+.state-table tr:hover{
+    background: rgba(195,117,231,0.2);
+}
+
+.ut-table{
+    margin-bottom: 20px;
+    padding:40px 20px 40px 20px;
+}
+.ut-table th{
+    color: rgb(195,117,231);
+}
+.ut-table tr:hover{
+    background: rgba(93,183,210,0.3);
+}
+
+
+
+
+

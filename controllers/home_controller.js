@@ -6,6 +6,9 @@ module.exports.map = function(req,res){
     return res.render("map-explorer");
 }
 
+module.exports.helpline = function(req,res){
+    return res.render("helpline");
+}
 module.exports.assess = function(req,res){
     return res.render("assess");
 }
