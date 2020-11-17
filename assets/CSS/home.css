@@ -105,9 +105,24 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 70px;
-    height: 600px;
+    padding: 20px 70px;
+    height: 50%;
+    font-weight: 600px;
 }
+#project-intro h3{
+    font-size: 1.8rem;
+}
+#covid-color{
+    background: -webkit-linear-gradient(#43d8c9, #BC78FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#project-intro a{
+    text-decoration: none;
+    color: #548CF0;
+    font-weight: bold;
+}
+
 
 #project-desc{
     width: 38%;
@@ -252,6 +267,7 @@ nav{
     padding: 30px 70px;
     display: flex;
     margin: 5% 0;
+    background: rgba(139,205,205,0.5);
     box-shadow: 0 0px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -431,9 +447,10 @@ nav{
 }
 
 #explorer-content{
-    width: 100%;
+    width: 60%;
     height: 100%;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -460,13 +477,21 @@ nav{
     border:none;
     cursor: pointer;
     color: white;
-    background: rgb(188,120,255);
-    background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
-    transition: width .5s;
+    background: #44BFB3;  
+    border-radius: 10px;
+    transition: .5s;
 }
 
 
 
+#explorer-content button:hover{
+    border: 2px solid #44BFB3;
+    background: white;
+    color: #44BFB3;
+    transition: .5s;
+
+
+}
 
 
 
