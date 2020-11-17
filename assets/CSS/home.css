@@ -230,7 +230,7 @@ nav{
 
 
 
-ul{
+#symptoms-container ul{
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -238,7 +238,8 @@ ul{
     /* border: 1px solid green; */
 }
 
-ul li{
+#symptoms-container ul li{
+    font-size: 2rem;
     margin-top: 3%;
     margin-left: 4%;
 }
@@ -385,7 +386,7 @@ ul li{
 
 
 
-ul{
+#precautions-container ul{
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -393,7 +394,7 @@ ul{
     /* border: 1px solid green; */
 }
 
-ul li{
+#precautions-container ul li{
     font-size: 2rem;
     margin-top: 3%;
     margin-left: 4%;
@@ -463,6 +464,9 @@ ul li{
     background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
     transition: width .5s;
 }
+
+
+
 
 
 

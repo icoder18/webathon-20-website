@@ -1,0 +1,83 @@
+/* -------------------------------footer------------------------------- */
+
+footer{
+    width: 100%;
+    
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-info{
+    width: 100%;
+    padding: 20px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: lightgrey;
+}
+
+#footer-intro{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+#footer-logo{
+    display: flex;
+    align-items: center;
+
+}
+
+#footer-img{
+    width: 20%;
+}
+
+#footer-about-us{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+#quick-links{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* border: 1px solid black; */
+}
+
+#quick-links h1{
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+#quick-links ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    margin-left: 2%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#quick-links ul li{
+    margin-top: 20px;
+}
+
+#quick-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    /* margin-top: 10px; */
+}
+
+
+
+#copyright-statement{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
