@@ -6,6 +6,10 @@ module.exports.map = function(req,res){
     return res.render("map-explorer");
 }
 
+<<<<<<< HEAD
+module.exports.helpline = function(req,res){
+    return res.render("helpline");
+=======
 module.exports.assess = function(req,res){
     return res.render("assess");
 }
@@ -39,4 +43,5 @@ module.exports.results = function(req,res){
         assesment: assesment 
     });
 
+>>>>>>> 2c7bacbc168fe0c350593e37b16df369fe0bb470
 }
