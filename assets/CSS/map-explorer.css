@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Serif', serif;
+    color: #0f0d14;
+}
+/* ---------------------nav-bar----------------------- */
+
+nav{
+    width: 100vw;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 85px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 50%, rgba(186,104,252,1) 80%); */
+    /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 40%, rgba(186,104,252,1) 80%); */
+    /* color: white; */
+}
+
+/* ---------LOGO AREA------------ */
+
+#project-id{
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+#project-id img{
+    /* width: 26%; */
+    height: 65px;
+    margin-right: 5px;
+}
+
+#project-name-1{
+    color:#BC78FF;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+#project-name-2{
+    color:#43d8c9;
+    font-size: 3.0rem;
+    font-weight: 600;
+}
+
+
+/* -----------nav menu------------- */
+
+#nav-menu{
+ width: 40%;
+ /* border: 1px solid red; */
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+#nav-menu a{
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 300;
+    color:#0f0d14;
+    /* padding: 1.5% 2.5%; */    
+}
+
+#nav-menu a::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 2px;
+    background: #0f0d14;
+    transition: width .5s;
+}
+
+#nav-menu a:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
+.live{
+    color:white;
+    background: #7579e7;
+    border-radius: 8%;
+    padding: 8px 10px;
+    /*background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 140%); 
+    border-radius: 8%;
+    padding: 5px 10px;*/
+
+}
+
+/* ------------------------------map-explorer-------------------------- */
+
+#map-explorer{
+    width: 100%;
+    padding: 0 70px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map-explorer h1{
+    font-size: 2.4rem;
+    color: #43d8c9;
+}
+
+#map-explorer h1::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 5px;
+    background: rgb(188,120,255);
+    background: linear-gradient(90deg, rgba(188,120,255,1) 30%, rgba(67,216,201,1) 70%);
+    transition: width .5s;
+}
+
+#map-explorer h1:hover::after{
+    width:100%;
+    transition: width .5s;
+}
+
+#map-intro{
+    font-size: 1.5rem;
+}
+
+#toggle-button{
+    margin-top: 5%;
+    width: 200px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+#toggle-button span{
+    /* border: 1px solid red; */
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.selected{
+    color:white;
+    background: #7579e7;
+}
+
+
+/* actual-maps */
+
+#map-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.map-display{
+    width: 70%;
+}
+.map-display svg{
+    margin: 0;
+}
+
+.map-display svg path{
+    fill: #1f4068;
+    stroke: white;
+    stroke-width: 0.5px;
+}
+.map-display svg path:hover{
+    fill: #e43f5a;
+}
+
+.no-display{
+    display: none;
+}
+
+#india-map{
+    /* margin-top: 2%; */
+    margin-left: 10%;
+}
+
+
+
+#stats-display{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#stats-display #name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#name img{
+    width: 10%;
+}
+
+
+#stats-display>span{
+    margin: 5% 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.column-display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red{
+    color: red;
+    font-weight: 500;
+}
+.green{
+    color: green;
+    font-weight: 500;
+}
+.grey{
+    color: darkgray;
+    font-weight: 500;
+}
+.smaller-font{
+    font-size: 1rem;
+}
+
+
+
+
