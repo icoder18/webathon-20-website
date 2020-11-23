@@ -19,19 +19,19 @@ module.exports.results = function(req,res){
 
 
 
-    if( parseInt(req.body.age)>= 60 && req.body.symptoms.length>=1){ 
+    if( parseInt(req.body.age)> 60 && req.body.symptoms.length>1){ 
         assesment = "serious";
     }
-    else if(req.body.chronicIllness.length >=1 && req.body.symptoms.length>=1){
+    else if(req.body.chronicIllness.length >1 && req.body.symptoms.length>1){
         assesment = "serious";
     }
-    else if(req.body.seriousSymptoms.length>=1){
+    else if(req.body.seriousSymptoms.length>1){
         assesment = "serious";
     }
-    else if(req.body.symptoms.length>=3){
+    else if(req.body.symptoms.length>3){
         assesment = "mild";
     }
-    else if(req.body.contactHistory == "yes" && req.body.symptoms.length>=3){
+    else if(req.body.contactHistory == "yes" && req.body.symptoms.length>3){
         assesment = "mild";
     }
     else{

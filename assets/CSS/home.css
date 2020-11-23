@@ -19,7 +19,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2px 85px;
+    padding: 2px 85px 2px 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 50%, rgba(186,104,252,1) 80%); */
     /* background: linear-gradient(90deg, rgba(186,104,252,1) 20%, rgba(232,185,254,1) 40%, rgba(186,104,252,1) 80%); */
@@ -125,9 +125,10 @@ nav{
 
 
 #project-desc{
-    width: 38%;
+    width: 40%;
     /* border: 1px solid green; */
     height: 100%;
+    padding: 15px;
 }
 
 #project-intro img{
