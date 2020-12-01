@@ -49,12 +49,19 @@ We learned a lot about SVGs and how beneficial they are for web developers and I
 We want to include more features into CORshield like an interactive chatbot, more useful resources to cope up with the stress and anxiety at this time, travel updates in various locations to ease travelling.
 
 <img width="1440" alt="Screenshot 2020-12-01 at 8 32 26 PM" src="https://user-images.githubusercontent.com/67034331/100757997-07844a80-3415-11eb-8e82-b3aa09875eb8.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 32 43 PM" src="https://user-images.githubusercontent.com/67034331/100758374-73ff4980-3415-11eb-9079-107d25c5d166.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 32 55 PM" src="https://user-images.githubusercontent.com/67034331/100758389-782b6700-3415-11eb-82eb-4b601b60e55d.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 33 06 PM" src="https://user-images.githubusercontent.com/67034331/100758420-824d6580-3415-11eb-8023-94911ae89713.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 33 19 PM" src="https://user-images.githubusercontent.com/67034331/100758463-8a0d0a00-3415-11eb-8295-9fd4fbdb3705.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 33 26 PM" src="https://user-images.githubusercontent.com/67034331/100758478-8e392780-3415-11eb-845a-ffa827df8be0.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 33 31 PM" src="https://user-images.githubusercontent.com/67034331/100758487-91ccae80-3415-11eb-9191-73f3dfc03080.png">
+##
 <img width="1440" alt="Screenshot 2020-12-01 at 8 33 46 PM" src="https://user-images.githubusercontent.com/67034331/100758498-96916280-3415-11eb-8422-9fca530a9fb7.png">
 
 
