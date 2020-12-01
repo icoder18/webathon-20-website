@@ -48,3 +48,5 @@ We learned a lot about SVGs and how beneficial they are for web developers and I
 ## What's next for CORshield
 We want to include more features into CORshield like an interactive chatbot, more useful resources to cope up with the stress and anxiety at this time, travel updates in various locations to ease travelling.
 
+<img width="1440" alt="Screenshot 2020-12-01 at 8 32 26 PM" src="https://user-images.githubusercontent.com/67034331/100757997-07844a80-3415-11eb-8e82-b3aa09875eb8.png">
+
