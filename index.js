@@ -1,7 +1,7 @@
 const { constant } = require("async");
 const express = require("express");
 const path = require("path");
-const port = 1000;
+const port = process.env.PORT || 1000;
 
 const app = express();
 
