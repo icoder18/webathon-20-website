@@ -15,9 +15,36 @@ module.exports.assess = function(req,res){
 
 module.exports.results = function(req,res){
     console.log(req.body);
-    let assesment = "";
+    const sqlite3 = require('sqlite3').verbose();
+
+    let db = new sqlite3.Database('testDB.db', (err) => {
+        if (err) {
+        return console.error(err.message);
+        }
+        console.log('Connected to the Test SQlite database.');
+    });
+
+    let data=[req.body.name,req.body.age,req.body.sex];
+    console.log(data);
+    //db.run(`INSERT INTO results(name,age,sex) VALUES(?,?,?)',data ${data}`);
+    
+    db.run('INSERT INTO results(name,age,sex) VALUES(?,?,?)',data,function(err){
+        if(err){
+            return console.log(err.message);
+        }
+        console.log(`Results added! with rowid ${this.lastID}`);
+    });
+
+    db.close((err) => {
+      if (err) {
+        return console.error(err.message);
+      }
+      console.log('Close the database connection.');
+    });
 
 
+
+    let assesment = "";  
 
     if( parseInt(req.body.age)> 60 && req.body.symptoms.length>1){ 
         assesment = "serious";
