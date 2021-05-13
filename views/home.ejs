@@ -5,23 +5,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/CSS/footer.css">
+        <link rel="stylesheet" href="/CSS/navbar.css">
         <link rel="stylesheet" href="/CSS/home.css">
         
     </head>
     <body>
-        <nav>
-            <div id="project-id">
-                <img src="/icons/logo.svg" alt="LOGO" id="logo">
-                <span id="project-name-1">COR</span><span id="project-name-2">shield</span>
-            </div>
-            <div id="nav-menu">
-                <a href="/"><span class="live">Home</span></a>
-                <a href="/map-explorer"><span>Map Explorer</span></a>
-                <a href="/assess-yourself"><span>Assess Yourself</span></a>
-                <a href="/helpline"><span>Helpline</span></a>
-            </div>
-        </nav>
-
+        <%- include("_navbar"); %>
         <div id="project-intro">
             <div id="project-desc">
                 <h3>Shielding you from <span id="covid-color">Covid-19</span></h3>

@@ -1,16 +1,24 @@
 module.exports.home = function(req,res){
-    return res.render("home");
+    return res.render("home",{
+        active: "home"
+    });
 }
 
 module.exports.map = function(req,res){
-    return res.render("map-explorer");
+    return res.render("map-explorer",{
+        active: "map-explorer"
+    });
 }
 
 module.exports.helpline = function(req,res){
-    return res.render("helpline");
+    return res.render("helpline",{
+        active: "helpline"
+    });
 }
 module.exports.assess = function(req,res){
-    return res.render("assess");
+    return res.render("assess",{
+        active: "assess"
+    });
 }
 
 module.exports.results = function(req,res){
@@ -66,7 +74,8 @@ module.exports.results = function(req,res){
     }
 
     return res.render("assess-result",{
-        assesment: assesment 
+        assesment: assesment,
+        active: "assess"
     });
 
 }
